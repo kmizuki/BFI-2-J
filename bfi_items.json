@@ -1,0 +1,422 @@
+[
+  {
+    "number": 1,
+    "text": "積極的で，社交的である",
+    "domain": "外向性",
+    "facet": "社交性",
+    "reverse": false
+  },
+  {
+    "number": 2,
+    "text": "思いやりがあり，優しい",
+    "domain": "協調性",
+    "facet": "思いやり",
+    "reverse": false
+  },
+  {
+    "number": 3,
+    "text": "行き当たりばったりな方だ",
+    "domain": "勤勉性",
+    "facet": "秩序",
+    "reverse": true
+  },
+  {
+    "number": 4,
+    "text": "リラックスしていて，ストレスにうまく対処している",
+    "domain": "否定的情動性",
+    "facet": "不安",
+    "reverse": true
+  },
+  {
+    "number": 5,
+    "text": "芸術的関心があまりない",
+    "domain": "開放性",
+    "facet": "美的感性",
+    "reverse": true
+  },
+  {
+    "number": 6,
+    "text": "積極的な性格だ",
+    "domain": "外向性",
+    "facet": "自己主張性",
+    "reverse": false
+  },
+  {
+    "number": 7,
+    "text": "礼儀正しく，他人に敬意をもって接する",
+    "domain": "協調性",
+    "facet": "敬意",
+    "reverse": false
+  },
+  {
+    "number": 8,
+    "text": "だらだらと過ごす方だ",
+    "domain": "勤勉性",
+    "facet": "生産性",
+    "reverse": true
+  },
+  {
+    "number": 9,
+    "text": "失敗を経験しても楽天的なままでいる",
+    "domain": "否定的情動性",
+    "facet": "抑うつ",
+    "reverse": true
+  },
+  {
+    "number": 10,
+    "text": "色々な物事に対する好奇心が強い",
+    "domain": "開放性",
+    "facet": "知的好奇心",
+    "reverse": false
+  },
+  {
+    "number": 11,
+    "text": "めったに興奮したり，熱狂したりしない",
+    "domain": "外向性",
+    "facet": "活力",
+    "reverse": true
+  },
+  {
+    "number": 12,
+    "text": "他人の欠点を見つけ出す方だ",
+    "domain": "協調性",
+    "facet": "信用",
+    "reverse": true
+  },
+  {
+    "number": 13,
+    "text": "しっかりしていて，真面目だ",
+    "domain": "勤勉性",
+    "facet": "責任感",
+    "reverse": false
+  },
+  {
+    "number": 14,
+    "text": "不機嫌になりやすく，感情の起伏が激しい",
+    "domain": "否定的情動性",
+    "facet": "情緒不安定性",
+    "reverse": false
+  },
+  {
+    "number": 15,
+    "text": "創意工夫が得意で，うまい方法を思いつくことができる",
+    "domain": "開放性",
+    "facet": "創造的想像力",
+    "reverse": false
+  },
+  {
+    "number": 16,
+    "text": "無口な方だ",
+    "domain": "外向性",
+    "facet": "社交性",
+    "reverse": true
+  },
+  {
+    "number": 17,
+    "text": "他人のことを思って心が痛むことはほとんどない",
+    "domain": "協調性",
+    "facet": "思いやり",
+    "reverse": true
+  },
+  {
+    "number": 18,
+    "text": "几帳面で，規則正しく整えることが好きだ",
+    "domain": "勤勉性",
+    "facet": "秩序",
+    "reverse": false
+  },
+  {
+    "number": 19,
+    "text": "神経が張り詰めることがある",
+    "domain": "否定的情動性",
+    "facet": "不安",
+    "reverse": false
+  },
+  {
+    "number": 20,
+    "text": "芸術，音楽，文学に魅了されている",
+    "domain": "開放性",
+    "facet": "美的感性",
+    "reverse": false
+  },
+  {
+    "number": 21,
+    "text": "上に立つ方で，リーダーとして活動する",
+    "domain": "外向性",
+    "facet": "自己主張性",
+    "reverse": false
+  },
+  {
+    "number": 22,
+    "text": "他人と言い争いを始める",
+    "domain": "協調性",
+    "facet": "敬意",
+    "reverse": true
+  },
+  {
+    "number": 23,
+    "text": "なかなか作業に取り掛かることができない",
+    "domain": "勤勉性",
+    "facet": "生産性",
+    "reverse": true
+  },
+  {
+    "number": 24,
+    "text": "安心感を抱いており，心地よい",
+    "domain": "否定的情動性",
+    "facet": "抑うつ",
+    "reverse": true
+  },
+  {
+    "number": 25,
+    "text": "知的で哲学的な考察を避けるようにしている",
+    "domain": "開放性",
+    "facet": "知的好奇心",
+    "reverse": true
+  },
+  {
+    "number": 26,
+    "text": "他の人と比べて活発ではない",
+    "domain": "外向性",
+    "facet": "活力",
+    "reverse": true
+  },
+  {
+    "number": 27,
+    "text": "他人を大目に見る寛大な人間だ",
+    "domain": "協調性",
+    "facet": "信用",
+    "reverse": false
+  },
+  {
+    "number": 28,
+    "text": "少し不注意なところがある",
+    "domain": "勤勉性",
+    "facet": "責任感",
+    "reverse": true
+  },
+  {
+    "number": 29,
+    "text": "情緒が安定しており，簡単には取り乱さない",
+    "domain": "否定的情動性",
+    "facet": "情緒不安定性",
+    "reverse": true
+  },
+  {
+    "number": 30,
+    "text": "創造性がほとんどない",
+    "domain": "開放性",
+    "facet": "創造的想像力",
+    "reverse": true
+  },
+  {
+    "number": 31,
+    "text": "内気なところがあり，内向的である",
+    "domain": "外向性",
+    "facet": "社交性",
+    "reverse": true
+  },
+  {
+    "number": 32,
+    "text": "進んで手伝おうとし，他人の利益を優先する",
+    "domain": "協調性",
+    "facet": "思いやり",
+    "reverse": false
+  },
+  {
+    "number": 33,
+    "text": "物事をきれいに揃えたりまとめたりする",
+    "domain": "勤勉性",
+    "facet": "秩序",
+    "reverse": false
+  },
+  {
+    "number": 34,
+    "text": "多くの悩みごとを抱えている",
+    "domain": "否定的情動性",
+    "facet": "不安",
+    "reverse": false
+  },
+  {
+    "number": 35,
+    "text": "芸術と美を重視する",
+    "domain": "開放性",
+    "facet": "美的感性",
+    "reverse": false
+  },
+  {
+    "number": 36,
+    "text": "人々の行動を左右するような影響力をもつことは難しいと感じる",
+    "domain": "外向性",
+    "facet": "自己主張性",
+    "reverse": true
+  },
+  {
+    "number": 37,
+    "text": "他人を見下すことがある",
+    "domain": "協調性",
+    "facet": "敬意",
+    "reverse": true
+  },
+  {
+    "number": 38,
+    "text": "手際よく行動し，物事を最後までやり遂げる",
+    "domain": "勤勉性",
+    "facet": "生産性",
+    "reverse": false
+  },
+  {
+    "number": 39,
+    "text": "よく悲しい気分になる",
+    "domain": "否定的情動性",
+    "facet": "抑うつ",
+    "reverse": false
+  },
+  {
+    "number": 40,
+    "text": "考え方が複雑で，深く考える人間だ",
+    "domain": "開放性",
+    "facet": "知的好奇心",
+    "reverse": false
+  },
+  {
+    "number": 41,
+    "text": "活力にあふれている",
+    "domain": "外向性",
+    "facet": "活力",
+    "reverse": false
+  },
+  {
+    "number": 42,
+    "text": "他人が考えていることを怪しんで不信感を抱く",
+    "domain": "協調性",
+    "facet": "信用",
+    "reverse": true
+  },
+  {
+    "number": 43,
+    "text": "ちゃんとしていて，いつも周りから当てにされる",
+    "domain": "勤勉性",
+    "facet": "責任感",
+    "reverse": false
+  },
+  {
+    "number": 44,
+    "text": "自分の感情をコントロールしている",
+    "domain": "否定的情動性",
+    "facet": "情緒不安定性",
+    "reverse": true
+  },
+  {
+    "number": 45,
+    "text": "ものごとを自由に心に思い描くのは難しい",
+    "domain": "開放性",
+    "facet": "創造的想像力",
+    "reverse": true
+  },
+  {
+    "number": 46,
+    "text": "おしゃべりな方だ",
+    "domain": "外向性",
+    "facet": "社交性",
+    "reverse": false
+  },
+  {
+    "number": 47,
+    "text": "冷淡で思いやりに欠けることがある",
+    "domain": "協調性",
+    "facet": "思いやり",
+    "reverse": true
+  },
+  {
+    "number": 48,
+    "text": "乱雑なものはそのままにして，きれいにしない",
+    "domain": "勤勉性",
+    "facet": "秩序",
+    "reverse": true
+  },
+  {
+    "number": 49,
+    "text": "不安や恐れを感じることはめったにない",
+    "domain": "否定的情動性",
+    "facet": "不安",
+    "reverse": true
+  },
+  {
+    "number": 50,
+    "text": "詩や演劇をつまらないと思う",
+    "domain": "開放性",
+    "facet": "美的感性",
+    "reverse": true
+  },
+  {
+    "number": 51,
+    "text": "他の人にリーダーシップを発揮してもらうほうが良いと思う",
+    "domain": "外向性",
+    "facet": "自己主張性",
+    "reverse": true
+  },
+  {
+    "number": 52,
+    "text": "他人に丁寧で，礼儀正しい",
+    "domain": "協調性",
+    "facet": "敬意",
+    "reverse": false
+  },
+  {
+    "number": 53,
+    "text": "根気強く，与えられた課題が終わるまで取り組む",
+    "domain": "勤勉性",
+    "facet": "生産性",
+    "reverse": false
+  },
+  {
+    "number": 54,
+    "text": "憂うつになり，落胆する方だ",
+    "domain": "否定的情動性",
+    "facet": "抑うつ",
+    "reverse": false
+  },
+  {
+    "number": 55,
+    "text": "抽象的な知識にはほとんど関心がない",
+    "domain": "開放性",
+    "facet": "知的好奇心",
+    "reverse": true
+  },
+  {
+    "number": 56,
+    "text": "情熱を大いに表に出す",
+    "domain": "外向性",
+    "facet": "活力",
+    "reverse": false
+  },
+  {
+    "number": 57,
+    "text": "人々のいちばん良いところを思い浮かべる",
+    "domain": "協調性",
+    "facet": "信用",
+    "reverse": false
+  },
+  {
+    "number": 58,
+    "text": "無責任な行動をしてしまうことがある",
+    "domain": "勤勉性",
+    "facet": "責任感",
+    "reverse": true
+  },
+  {
+    "number": 59,
+    "text": "神経質で，感情的になりやすい",
+    "domain": "否定的情動性",
+    "facet": "情緒不安定性",
+    "reverse": false
+  },
+  {
+    "number": 60,
+    "text": "個性的で，新しいアイディアを思いつく",
+    "domain": "開放性",
+    "facet": "創造的想像力",
+    "reverse": true
+  }
+]
