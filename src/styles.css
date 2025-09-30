@@ -8,6 +8,21 @@
   letter-spacing: 0.02em;
 }
 
+::selection {
+  background: none;
+}
+
+/* すべてのラジオボタンのデフォルト選択状態をリセット */
+input[type="radio"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type="radio"]:checked {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,6 +44,11 @@ main.app {
     radial-gradient(circle at top, #fef3c7, transparent 55%),
     radial-gradient(circle at bottom, #c7d2fe, transparent 60%),
     rgb(245 249 255);
+}
+
+main.app.intro-page {
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -166,11 +186,46 @@ main.app {
   transform: translateY(-1px);
 }
 
-.option input {
-  appearance: none;
-  inline-size: 1rem;
-  block-size: 1rem;
-  margin: 0;
+/* すべてのフォーム要素のデフォルト選択状態を完全に無効化 */
+* {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+input,
+input:focus,
+input:checked,
+input:active {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* ラジオボタン専用の追加リセット */
+input[type="radio"] {
+  background: transparent !important;
+  border: 2px solid transparent !important;
+  position: relative !important;
+}
+
+input[type="radio"]:checked::before {
+  display: none !important;
+  content: none !important;
+}
+
+input[type="radio"]:checked::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* 選択状態の擬似要素も完全に無効化 */
+input[type="radio"]:checked {
+  background: transparent !important;
+  border: 2px solid transparent !important;
 }
 
 .option-content {
@@ -264,21 +319,88 @@ main.app {
 }
 
 @media (max-width: 600px) {
+  main.app {
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem clamp(0.75rem, 4vw, 1.25rem);
+  }
+
+  .scale-options {
+    gap: 0.5rem;
+  }
+
   .card {
-    padding: 1.75rem 1.25rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .title {
+    font-size: clamp(1.35rem, 2.8vw + 1rem, 1.9rem);
+  }
+
+  .intro-message {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .instruction {
+    font-size: 0.9rem;
+  }
+
+  .question-body {
+    padding: 1.25rem;
+  }
+
+  .question-text {
+    font-size: 1.05rem;
   }
 
   .option {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0.8rem;
+    user-select: none;
   }
 
-  .option-content {
-    width: 100%;
-    justify-content: space-between;
+  .option-number {
+    flex-shrink: 0;
+    inline-size: 1.75rem;
+    block-size: 1.75rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #6366f1;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1;
+  }
+
+  .option:has(input:checked) .option-number {
+    background: #4338ca;
+  }
+
+  .option-label {
+    flex: 1;
+    text-align: start;
+    color: #374151;
+    font-size: 1rem;
   }
 
   .actions {
+    flex-direction: column;
+    gap: 0.75rem;
     justify-content: center;
+  }
+
+  .primary-button,
+  .secondary-button {
+    inline-size: 100%;
+  }
+
+  .score-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

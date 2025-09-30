@@ -280,15 +280,15 @@ const App = () => {
 
   if (stage === "intro") {
     return (
-      <main className="app">
+      <main className="app intro-page">
         <section className="card">
-          <h1 className="title">日本語版Big Five Inventory-2</h1>
+          <h1 className="title">Big Five Inventory-2</h1>
           <p className="intro-message">
-            これはBig
-            Fiveパーソナリティの５つの特性を測定するための質問です。５つの特性（ドメイン）にはそれぞれ3つの下位概念（ファセット）が想定されています。出題は60問です。
+            BFI-2-JはBFI-2の日本語版です。このツールは60問の質問でBig
+            Fiveパーソナリティの５つの特性を測定します。５つの特性（ドメイン）にはそれぞれ3つの下位概念（ファセット）が想定されています。
           </p>
           <p className="instruction">
-            正解・不正解はありません。最近の一時的な気分ではなく、ここ数年の一般的な傾向を思い浮かべて回答してください。思い出しにくい場面は考え込まず、第一印象で選んでかまいません。
+            最近の一時的な気分ではなく、ここ数年の傾向を思い浮かべて正直に回答してください。思い出しにくい質問は考え込まず、第一印象で選んでかまいません。
           </p>
           <p className="citation">
             Yoshino, S., Shimotsukasa, T., Oshio, A., Hashimoto, Y., Ueno, Y.,
