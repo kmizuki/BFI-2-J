@@ -23,7 +23,9 @@ Yoshino, S., Shimotsukasa, T., Oshio, A., Hashimoto, Y., Ueno, Y., Mieda, T., Mi
 
 ## 開発
 
-- 依存関係のインストール: `npm install`
-- 開発サーバーの起動: `npm run dev`
-- 本番ビルドの作成: `npm run build`
-- ビルド成果物のプレビュー: `npm run preview`
+- 前提環境: `Bun`
+- 依存関係のインストール: `bun install`
+- 開発サーバーの起動: `bun run dev`
+- 型チェックと lint: `bun run check`
+- 本番ビルドの作成: `bun run build`
+- ビルド成果物のプレビュー: `bun run preview`

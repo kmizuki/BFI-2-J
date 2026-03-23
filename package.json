@@ -7,21 +7,23 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "format": "ultracite fix",
-    "lint": "ultracite check"
+    "lint": "ultracite check",
+    "typecheck": "tsc -b",
+    "check": "ultracite check && tsc -b",
+    "fix": "ultracite fix"
   },
   "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.4",
-    "@types/node": "^24.6.0",
-    "@types/react": "^19.1.15",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.4",
-    "typescript": "^5.9.2",
-    "ultracite": "5.4.6",
-    "vite": "^7.1.7"
+    "@biomejs/biome": "2.4.8",
+    "@types/node": "^24.12.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^5.9.3",
+    "ultracite": "7.3.2",
+    "vite": "^8.0.1"
   }
 }

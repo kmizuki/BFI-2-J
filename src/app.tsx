@@ -59,21 +59,21 @@ const createZeroFacetMap = () => buildZeroMap(facetDefinitions);
 
 type Rating = 1 | 2 | 3 | 4 | 5;
 
-type RawItem = {
-  number: number;
-  text: string;
+interface RawItem {
   domain: string;
   facet: string;
-  reverse: boolean;
-};
-
-type Item = {
   number: number;
+  reverse: boolean;
   text: string;
+}
+
+interface Item {
   domainId: DomainId;
   facetId: FacetId;
+  number: number;
   reverse: boolean;
-};
+  text: string;
+}
 
 const normalizeItems = (rawList: RawItem[]): Item[] => {
   const normalized: Item[] = [];
@@ -100,10 +100,10 @@ const normalizeItems = (rawList: RawItem[]): Item[] => {
 const questionnaireItems = normalizeItems(rawItems as RawItem[]);
 const totalItems = questionnaireItems.length;
 
-type Totals = {
+interface Totals {
   domains: Record<DomainId, number>;
   facets: Record<FacetId, number>;
-};
+}
 
 const createInitialTotals = (): Totals => ({
   domains: createZeroDomainMap(),
@@ -154,16 +154,16 @@ const ratingEntries: [Rating, string][] = Array.from(
   }
 );
 
-type ScoreEntry<Id extends string> = {
+interface ScoreEntry<Id extends string> {
   id: Id;
   label: string;
   value: number;
-};
+}
 
-type ScoreSummary = {
+interface ScoreSummary {
   domains: ScoreEntry<DomainId>[];
   facets: ScoreEntry<FacetId>[];
-};
+}
 
 type Stage = "intro" | "question" | "result";
 

@@ -1,11 +1,11 @@
 :root {
-  color-scheme: light;
   font-family:
     "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  background-color: #f5f7fa;
-  color: #1f2933;
   line-height: 1.6;
+  color: #1f2933;
   letter-spacing: 0.02em;
+  color-scheme: light;
+  background-color: #f5f7fa;
 }
 
 ::selection {
@@ -18,15 +18,15 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
@@ -35,10 +35,10 @@ body {
 }
 
 main.app {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   padding: 2rem 1rem;
   background:
     radial-gradient(circle at top, #fef3c7, transparent 55%),
@@ -52,15 +52,15 @@ main.app.intro-page {
 }
 
 .card {
-  width: min(700px, 100%);
-  background-color: #ffffff;
-  border-radius: 1.5rem;
-  padding: 2.5rem 2rem;
-  box-shadow: 0 25px 50px -12px rgb(15 23 42 / 0.25);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: min(700px, 100%);
+  padding: 2.5rem 2rem;
+  background-color: #ffffff;
   border: 1px solid rgb(15 23 42 / 0.08);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgb(15 23 42 / 0.25);
 }
 
 .title {
@@ -70,11 +70,11 @@ main.app.intro-page {
 }
 
 .intro-message {
+  padding: 1.25rem;
   font-size: 1.1rem;
   background-color: rgb(79 70 229 / 0.08);
-  border-radius: 1rem;
-  padding: 1.25rem;
   border: 1px solid rgb(79 70 229 / 0.12);
+  border-radius: 1rem;
 }
 
 .instruction {
@@ -84,12 +84,12 @@ main.app.intro-page {
 
 .primary-button,
 .secondary-button {
-  border: none;
-  border-radius: 9999px;
   padding: 0.8rem 1.8rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  border: none;
+  border-radius: 9999px;
   transition:
     transform 120ms ease,
     box-shadow 120ms ease,
@@ -97,20 +97,20 @@ main.app.intro-page {
 }
 
 .primary-button {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: #ffffff;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   box-shadow: 0 8px 20px -8px rgb(107 70 193 / 0.5);
 }
 
 .primary-button:disabled {
+  cursor: not-allowed;
   background: #c7c9d7;
   box-shadow: none;
-  cursor: not-allowed;
 }
 
 .secondary-button {
-  background: #f3f4f6;
   color: #1f2933;
+  background: #f3f4f6;
 }
 
 .primary-button:focus-visible,
@@ -120,13 +120,13 @@ main.app.intro-page {
 }
 
 .primary-button:hover:not(:disabled) {
-  transform: translateY(-1px);
   box-shadow: 0 12px 25px -12px rgb(79 70 229 / 0.7);
+  transform: translateY(-1px);
 }
 
 .secondary-button:hover {
-  transform: translateY(-1px);
   background-color: #e5e7eb;
+  transform: translateY(-1px);
 }
 
 .question-header {
@@ -141,10 +141,10 @@ main.app.intro-page {
 }
 
 .question-body {
+  padding: 1.5rem;
   background-color: rgb(236 254 255 / 0.4);
   border: 1px solid rgb(14 165 233 / 0.12);
   border-radius: 1.25rem;
-  padding: 1.5rem;
 }
 
 .question-text {
@@ -159,21 +159,21 @@ main.app.intro-page {
 }
 
 .scale-options {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  list-style: none;
 }
 
 .option {
   display: flex;
-  align-items: center;
   gap: 0.75rem;
+  align-items: center;
   padding: 0.75rem 1rem;
-  border-radius: 1rem;
-  border: 1px solid rgb(15 23 42 / 0.08);
-  background-color: #f9fafb;
   cursor: pointer;
+  background-color: #f9fafb;
+  border: 1px solid rgb(15 23 42 / 0.08);
+  border-radius: 1rem;
   transition:
     border 120ms ease,
     background 120ms ease,
@@ -207,9 +207,9 @@ input:active {
 
 /* ラジオボタン専用の追加リセット */
 input[type="radio"] {
+  position: relative !important;
   background: transparent !important;
   border: 2px solid transparent !important;
-  position: relative !important;
 }
 
 input[type="radio"]:checked::before {
@@ -230,19 +230,19 @@ input[type="radio"]:checked {
 
 .option-content {
   display: flex;
-  align-items: center;
   gap: 0.75rem;
+  align-items: center;
 }
 
 .option-number {
-  inline-size: 2.25rem;
-  block-size: 2.25rem;
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  background: #6366f1;
-  color: white;
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
   font-weight: 700;
+  color: white;
+  background: #6366f1;
+  border-radius: 50%;
 }
 
 .option:has(input:checked) .option-number {
@@ -250,8 +250,8 @@ input[type="radio"]:checked {
 }
 
 .option-label {
-  color: #374151;
   font-size: 1rem;
+  color: #374151;
 }
 
 .actions {
@@ -273,20 +273,20 @@ input[type="radio"]:checked {
 }
 
 .score-list {
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.75rem;
+  list-style: none;
 }
 
 .score-item {
-  border-radius: 1rem;
-  border: 1px solid rgb(15 23 42 / 0.08);
-  background-color: #f9fafb;
-  padding: 0.9rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  background-color: #f9fafb;
+  border: 1px solid rgb(15 23 42 / 0.08);
+  border-radius: 1rem;
 }
 
 .score-label {
@@ -307,15 +307,15 @@ input[type="radio"]:checked {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+  clip: rect(0, 0, 0, 0);
 }
 
 .citation {
   font-size: 0.75rem;
-  color: #6b7280;
   line-height: 1.5;
+  color: #6b7280;
 }
 
 @media (max-width: 600px) {
@@ -330,9 +330,9 @@ input[type="radio"]:checked {
   }
 
   .card {
+    gap: 1.25rem;
     padding: 1.5rem 1.25rem;
     border-radius: 1.25rem;
-    gap: 1.25rem;
   }
 
   .title {
@@ -340,8 +340,8 @@ input[type="radio"]:checked {
   }
 
   .intro-message {
-    font-size: 1rem;
     padding: 1rem;
+    font-size: 1rem;
   }
 
   .instruction {
@@ -358,24 +358,24 @@ input[type="radio"]:checked {
 
   .option {
     display: flex;
-    align-items: center;
     gap: 0.75rem;
+    align-items: center;
     padding: 0.75rem 0.8rem;
     user-select: none;
   }
 
   .option-number {
+    display: grid;
     flex-shrink: 0;
+    place-items: center;
     inline-size: 1.75rem;
     block-size: 1.75rem;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: #6366f1;
-    color: white;
-    font-weight: 700;
     font-size: 0.875rem;
+    font-weight: 700;
     line-height: 1;
+    color: white;
+    background: #6366f1;
+    border-radius: 50%;
   }
 
   .option:has(input:checked) .option-number {
@@ -384,9 +384,9 @@ input[type="radio"]:checked {
 
   .option-label {
     flex: 1;
-    text-align: start;
-    color: #374151;
     font-size: 1rem;
+    color: #374151;
+    text-align: start;
   }
 
   .actions {
