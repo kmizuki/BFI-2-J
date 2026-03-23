@@ -23,7 +23,7 @@ Yoshino, S., Shimotsukasa, T., Oshio, A., Hashimoto, Y., Ueno, Y., Mieda, T., Mi
 
 ## 開発
 
-- 構成: React 19 + Vite 8 + TypeScript
+- 構成: React 19 + Vite 8 + Tailwind CSS v4 + TypeScript
 - 前提環境: `Bun`
 - 依存関係のインストール: `bun install`
 - 開発サーバーの起動: `bun run dev`
