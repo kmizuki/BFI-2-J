@@ -12,21 +12,11 @@
   background: none;
 }
 
-/* すべてのラジオボタンのデフォルト選択状態をリセット */
-input[type="radio"] {
-  -webkit-tap-highlight-color: transparent;
-}
-
-input[type="radio"]:checked {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -67,6 +57,16 @@ main.app.intro-page {
   font-size: clamp(1.5rem, 2.5vh + 1rem, 2.25rem);
   font-weight: 700;
   color: #1c1f26;
+}
+
+.page-title {
+  outline: none;
+}
+
+.page-title:focus-visible {
+  outline: 3px solid rgb(99 102 241 / 0.3);
+  outline-offset: 4px;
+  border-radius: 0.5rem;
 }
 
 .intro-message {
@@ -132,7 +132,7 @@ main.app.intro-page {
 .question-header {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .progress {
@@ -155,7 +155,9 @@ main.app.intro-page {
 }
 
 .scale {
-  display: contents;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 .scale-options {
@@ -166,6 +168,7 @@ main.app.intro-page {
 }
 
 .option {
+  position: relative;
   display: flex;
   gap: 0.75rem;
   align-items: center;
@@ -180,56 +183,32 @@ main.app.intro-page {
     transform 120ms ease;
 }
 
-.option:has(input:checked) {
+.option:has(.option-input:checked) {
   background: rgb(99 102 241 / 0.1);
   border-color: rgb(99 102 241 / 0.4);
   transform: translateY(-1px);
 }
 
-/* すべてのフォーム要素のデフォルト選択状態を完全に無効化 */
-* {
-  -webkit-tap-highlight-color: transparent !important;
+.option:has(.option-input:focus-visible) {
+  outline: 3px solid rgb(99 102 241 / 0.3);
+  outline-offset: 2px;
 }
 
-input,
-input:focus,
-input:checked,
-input:active {
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent !important;
-}
-
-/* ラジオボタン専用の追加リセット */
-input[type="radio"] {
-  position: relative !important;
-  background: transparent !important;
-  border: 2px solid transparent !important;
-}
-
-input[type="radio"]:checked::before {
-  display: none !important;
-  content: none !important;
-}
-
-input[type="radio"]:checked::after {
-  display: none !important;
-  content: none !important;
-}
-
-/* 選択状態の擬似要素も完全に無効化 */
-input[type="radio"]:checked {
-  background: transparent !important;
-  border: 2px solid transparent !important;
+.option-input {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
 }
 
 .option-content {
   display: flex;
+  flex: 1;
   gap: 0.75rem;
   align-items: center;
 }
@@ -245,7 +224,7 @@ input[type="radio"]:checked {
   border-radius: 50%;
 }
 
-.option:has(input:checked) .option-number {
+.option:has(.option-input:checked) .option-number {
   background: #4338ca;
 }
 
@@ -256,6 +235,7 @@ input[type="radio"]:checked {
 
 .actions {
   display: flex;
+  gap: 0.75rem;
   justify-content: flex-end;
   margin-top: 1rem;
 }

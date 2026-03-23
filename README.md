@@ -23,9 +23,11 @@ Yoshino, S., Shimotsukasa, T., Oshio, A., Hashimoto, Y., Ueno, Y., Mieda, T., Mi
 
 ## 開発
 
+- 構成: React 19 + Vite 8 + TypeScript
 - 前提環境: `Bun`
 - 依存関係のインストール: `bun install`
 - 開発サーバーの起動: `bun run dev`
 - 型チェックと lint: `bun run check`
 - 本番ビルドの作成: `bun run build`
 - ビルド成果物のプレビュー: `bun run preview`
+- GitHub Pages 公開では [`vite.config.ts`](./vite.config.ts) の `base: "/BFI-2-J/"` を使っています。リポジトリ名を変更する場合は、この値もあわせて更新してください。
